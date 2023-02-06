@@ -140,6 +140,26 @@ for (; v = arr10.length-1;) {
 
 
 
+// task Jenya
+
+const arrMult = Array.from({ length: 11 }, () => Math.floor(Math.random() * 10+1));
+console.log(arrMult);
+
+let mult = 1;
+
+for (r = 0; r < arrMult.length; r++) {
+
+    if ((r+1)%3 === 0) {
+        mult = mult * arrMult[r];
+    
+    } else {
+        continue;
+    }
+    
+}
+console.log(mult);
+
+
 
 
 
